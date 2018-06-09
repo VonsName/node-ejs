@@ -15,6 +15,7 @@ app.use(objMulter.any());
 app.use('/',function (req,res,next) {
     let f=req.files;//file数组
     console.log(path.parse(f[0].path));
+    //重命名
     fs.rename(f[0].path,f[0].path+path.parse(f[0].originalname).ext,function (err) {
         if (err) {
             console.log('err');
