@@ -36,5 +36,8 @@ app.get('/index',function (req,res) {
     //指定模版文件的名字
     res.render('2.ejs');
 })
+app.get('/',(req,res,next)=>{
+
+})
 app.listen(8080);
 
