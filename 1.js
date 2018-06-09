@@ -7,7 +7,7 @@ const str=ejss.renderFile('./views/1.ejs',
                 function (err,data) {
     console.log(data);
 });
-fs.writeFile('./views/1.html',str,function (err) {
+fs.writeFile('./views/form.html',str,function (err) {
     if (err){
         console.log('编译失败');
     }
